@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cliff Airlines - Book Your Flight</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <h1>Cliff Airlines</h1>
+    <p>Fly with comfort, arrive in style</p>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#flights">Flights</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-layout">
+    <div class="content">
+      <section id="home">
+        <h2>Why Fly with Cliff Airlines?</h2>
+        <ul class="features-list">
+          <li>Complimentary meals & beverages</li>
+          <li>Priority boarding for members</li>
+          <li>Extra legroom in all seats</li>
+          <li>Free Wi-Fi on international flights</li>
+          <li>Earn miles with every trip</li>
+        </ul>
+      </section>
+
+      <section id="flights">
+        <h2>Flight Schedule</h2>
+        <table>
+          <caption>Daily Flights from Accra (ACC)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Destination</th>
+              <th scope="col">Flight No.</th>
+              <th scope="col">Departure</th>
+              <th scope="col">Arrival</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nairobi (NBO)</td>
+              <td>SH101</td>
+              <td>08:00 AM</td>
+              <td>08:30 PM</td>
+            </tr>
+            <tr>
+              <td>Johannesburg (JNB)</td>
+              <td>SH202</td>
+              <td>01:00 PM</td>
+              <td>04:00 PM</td>
+            </tr>
+            <tr>
+              <td>Addis Ababa (ADD)</td>
+              <td>SH303</td>
+              <td>06:00 PM</td>
+              <td>05:00 AM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="booking">
+        <h2>Book Your Flight</h2>
+        <form id="booking-form">
+          <fieldset>
+            <legend>Passenger Info</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+233-555-555-5555" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Flight Details</legend>
+            <label for="dest">Destination</label>
+            <select id="dest" name="dest" required>
+              <option value="">Select...</option>
+              <option value="NBO">Nairobi (NBO)</option>
+              <option value="JNB">Johannesburg (JNB)</option>
+              <option value="ADD">Addis Ababa (ADD)</option>
+            </select>
+
+            <label for="date">Departure Date</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="passengers">Passengers</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" />
+          </fieldset>
+
+          <button type="submit">Book Now</button>
+        </form>
+
+        <!-- Dynamic confirmation message will appear here -->
+        <div id="confirmation"></div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="promo-box">
+        <h3>Special Offer!</h3>
+        <p>Book now and get 15% off your first international flight.</p>
+        <button id="toggle-offer">Hide Offer</button>
+      </div>
+      <div class="travel-tip">
+        <h3>Travel Tip</h3>
+        <p>Arrive at least 2 hours before your international flight.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Cliff Airlines. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="./script.js"></script>
+</body>
+</html>
